@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ASCII Art Generator</title>
+
+<style>
+
+body{
+font-family: monospace;
+text-align:center;
+padding:20px;
+}
+
+#ascii{
+white-space: pre;
+font-size:5px;
+line-height:5px;
+background:white;
+padding:10px;
+border:1px solid black;
+overflow:auto;
+}
+
+button{
+font-size:18px;
+margin:10px;
+padding:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>ASCIIアート作成</h1>
+
+<input type="file" id="upload">
+
+<br>
+
+<button onclick="copyText()">コピー（LINE用）</button>
+
+<pre id="ascii"></pre>
+
+<script src="script.js"></script>
+
+</body>
+</html>
